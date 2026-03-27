@@ -86,6 +86,10 @@
             width: 90%;
             margin: auto;
         }
+
+        .colluming {
+            flex-direction: column;
+        }
     }
 </style>
 
@@ -218,6 +222,47 @@
                 <img src="./image/illustration3.svg" alt="" />
             </div>
         </section>
+
+        <!-- colluming -->
+        <section class="bg-[#1E212C] w-full min-h-[800px] flex justify-center items-center px-4 py-10">
+            <div
+                class="max-w-[1200px] w-full flex flex-col md:flex-row items-center justify-center gap-10 md:gap-[70px]">
+
+                <div>
+                    <img class="w-full max-w-[500px]" src="./image/illustration6.svg" alt="">
+                </div>
+
+                <div class="w-full max-w-[600px]">
+                    <h2 class="text-[28px] md:text-[35px] font-bold text-white text-left pb-6 md:pb-[30px]">
+                        Get free SEO analysis
+                    </h2>
+
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-[20px]" action="">
+                        <input class="bg-gray-400 h-[40px] placeholder:pl-[15px] rounded-[5px] placeholder:text-white"
+                            placeholder="Your name" type="text">
+
+                        <input class="bg-gray-400 h-[40px] placeholder:pl-[15px] rounded-[5px] placeholder:text-white"
+                            placeholder="Your email" type="email">
+
+                        <input
+                            class="bg-gray-400 md:col-span-2 h-[40px] placeholder:pl-[15px] rounded-[5px] placeholder:text-white"
+                            placeholder="Your url" type="url">
+
+                        <div class="md:col-span-2 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                            <label class="flex items-start text-white gap-3">
+                                <input class="mt-1" type="checkbox">
+                                <span>I agree to receive communications from Createx SEO Agency</span>
+                            </label>
+
+                            <button class="text-white px-[40px] rounded-[7px] py-[7px] bg-purple-600">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
 </body>
 
