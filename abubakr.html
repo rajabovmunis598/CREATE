@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link rel="stylesheet" href="./src/output.css" />
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .background {
+        background-image: url(./image/backgroundHero.jpg);
+        height: 800px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (max-width: 500px) {
+        ul {
+            display: none;
+        }
+
+        nav {
+            width: 90%;
+        }
+
+        .afterNav {
+            width: 90%;
+            display: flex;
+            justify-content: start;
+            padding-top: 5px;
+
+            :nth-child(1) {
+                cursor: pointer;
+            }
+        }
+
+        .afterNav:nth-child(2) {
+            cursor: pointer;
+        }
+
+        .afterNav:nth-child(3) {
+            cursor: pointer;
+            font-size: 40px !important;
+        }
+
+        .headerTit {
+            font-size: 30px;
+        }
+
+        .info {
+            font-size: 16px;
+        }
+
+        .lastLine {
+            width: 90%;
+            margin: auto;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .firstIl {
+            width: 90%;
+            flex-direction: column;
+            height: 100vh;
+            padding: 0px;
+        }
+
+        .social {
+            font-size: 20px;
+            width: 100%;
+        }
+
+        .socialleft {
+            width: 90%;
+            text-align: center;
+        }
+
+        .socialBtn {
+            text-align: center;
+            width: 90%;
+            margin: auto;
+        }
+    }
+</style>
+
+<body>
+    <header class="background h-[800px]">
+        <nav class="flex justify-between items-center max-w-[1200px] m-auto pt-10 text-white">
+            <div><img src="./image/logo.svg" alt="" /></div>
+            <div>
+                <ul class="flex items-center gap-[40px] justify-around">
+                    <li class="hover:cursor-pointer">Services</li>
+                    <li class="text-[#A6A7B0] hover:text-white cursor-pointer">
+                        Case Studies
+                    </li>
+                    <li class="text-[#A6A7B0] hover:text-white cursor-pointer">
+                        About Us
+                    </li>
+                    <li class="text-[#A6A7B0] hover:text-white cursor-pointer">Blog</li>
+                    <li class="text-[#A6A7B0] hover:text-white cursor-pointer">
+                        Contacts
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <button class="bg-[#7772F1] px-[30px] py-[10px] cursor-pointer rounded-[5px]">
+                    Talk to a human
+                </button>
+            </div>
+        </nav>
+        <section
+            class="afterNav max-w-[1200px] flex items-center justify-center gap-[20px] m-auto py-[40px] text-white">
+            <div>
+                <a href="./index.html"><img src="./image/Home.svg" alt="" /></a>
+            </div>
+            <div>></div>
+            <div>Services</div>
+        </section>
+        <section class="lastLine max-w-[1200px] m-auto text-white text-center">
+            <h1 class="headerTit font-black text-[72px] pb-[50px]">Our Services</h1>
+            <p class="info font-normal text-[30px] text-[#A6A7B0]">
+                We offer more than services. Our agency provides solutions to your
+                top-priority concerns,<br />
+                involving customer targeting, email performance and sales growth. If
+                there is no existing <br />
+                solution readily available, we create one, specifically to suit your
+                business.
+            </p>
+            <div class="flex m-auto max-w-[1200px] justify-center gap-[40px] pt-[30px]">
+                <button
+                    class="border-3 border-white text-white border-solid py-[7px] px-[27px] cursor-pointer hover:bg-white hover:text-black hover:border-black">
+                    start now</button><button class="cursor-pointer">
+                    <img src="./image/call.svg" alt="" />
+                </button>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="firstIl flex max-w-[1200px] m-auto items-center h-[500px] justify-center gap-[50px]">
+            <div class="socialleft w-[50%]">
+                <h3 class="font-bold text-[35px] social">Social Media Marketing</h3>
+                <p class="socialInfo text-gray-400 lin-h text-[16px] leading-[30px] pb-[20px]">
+                    Eleifend orci massa et facilisis orci feugiat ac. Congue in ut
+                    lacus, turpis accumsan gravida. Aliquet mattis dignissim massa
+                    sociis a, id bibendum. Egestas lorem eros, mi cras amet, vel eget
+                    molestie. Turpis enim arcu, amet donec massa pellentesque nulla
+                    duis. Arcu dictum metus sed purus senectus faucibus eget elementum
+                    pretium.
+                </p>
+                <div class="socialBtn flex gap-[10px]">
+                    <button
+                        class="text-purple-400 border-purple-400 border-[2px] border-solid py-[7px] px-[15px] cursor-pointer rounded-[7px]">
+                        Learn more</button><button
+                        class="text-white bg-purple-400 border-none border-solid py-[7px] px-[15px] cursor-pointer rounded-[7px]">
+                        Try SEO toolkit
+                    </button>
+                </div>
+            </div>
+            <div class="flex">
+                <img src="./image/illustrationstart.svg" alt="" />
+            </div>
+        </section>
+
+        <!-- //next -->
+
+        <section class="firstIl flex max-w-[1200px] m-auto items-center h-[500px] justify-center gap-[50px]">
+            <div class="flex">
+                <img src="./image/illustration2.svg" alt="" />
+            </div>
+            <div class="socialleft w-[50%]">
+                <h3 class="font-bold text-[35px] social">
+                    Search Engine Optimization
+                </h3>
+                <p class="socialInfo text-gray-400 lin-h text-[16px] leading-[30px] pb-[20px]">
+                    Elementum ipsum lorem tortor morbi quis turpis pellentesque ultrices
+                    aenean. Lacus sit viverra et egestas nisl vitae lacus, eget. Eu
+                    pulvinar duis in posuere non adipiscing. Nunc, tristique viverra
+                    tincidunt nec proin tempus egestas massa. Quis velit nunc nisl sem
+                    in tristique..
+                </p>
+                <div class="socialBtn flex gap-[10px]">
+                    <button
+                        class="text-purple-400 border-purple-400 border-[2px] border-solid py-[7px] px-[15px] cursor-pointer rounded-[7px]">
+                        Learn more</button><button
+                        class="text-white bg-purple-400 border-none border-solid py-[7px] px-[15px] cursor-pointer rounded-[7px]">
+                        Try SEO toolkit
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- //next -->
+
+        <section class="firstIl flex max-w-[1200px] m-auto items-center h-[500px] justify-center gap-[50px]">
+            <div class="socialleft w-[50%]">
+                <h3 class="font-bold text-[35px] social">Research Service</h3>
+                <p class="socialInfo text-gray-400 lin-h text-[16px] leading-[30px] pb-[20px]">
+                    Volutpat tellus mauris sit sit. Posuere ut sit vestibulum amet
+                    viverra in. Est nulla lectus purus tincidunt massa tortor. Hendrerit
+                    vulputate elementum blandit massa vitae amet felis eget.
+                </p>
+                <div class="socialBtn flex gap-[10px]">
+                    <button
+                        class="text-purple-400 border-purple-400 border-[2px] border-solid py-[7px] px-[15px] cursor-pointer rounded-[7px]">
+                        Learn more</button><button
+                        class="text-white bg-purple-400 border-none border-solid py-[7px] px-[15px] cursor-pointer rounded-[7px]">
+                        Try SEO toolkit
+                    </button>
+                </div>
+            </div>
+            <div class="flex">
+                <img src="./image/illustration3.svg" alt="" />
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
