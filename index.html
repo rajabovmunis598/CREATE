@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <section class="relative h-[500px] flex flex-col font-sans text-white overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <img 
+      src="./image/image (5).png" 
+      alt="Bulb background" 
+      class="w-full h-full object-cover"
+    >
+    <div class="absolute inset-0 bg-[#1e212c]/80"></div>
+  </div>
+
+  <header class="relative z-10 w-full max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
+    <div class="flex items-center gap-10">
+      <div class="text-2xl font-black tracking-tighter italic"><img src="./image/logo.png" alt=""></div>
+      <nav class="hidden md:flex gap-8 text-sm font-bold opacity-80">
+        <a href="#" class="hover:opacity-100 flex items-center gap-1">Services <span class="text-[10px]">▼</span></a>
+        <a href="#" class="hover:opacity-100 text-[#7772F1]">Case Studies</a>
+        <a href="#" class="hover:opacity-100">About Us</a>
+        <a href="#" class="hover:opacity-100">Blog</a>
+        <a href="#" class="hover:opacity-100">Contacts</a>
+      </nav>
+    </div>
+    <button class="bg-[#7772F1] hover:bg-[#5a54d6] text-white px-8 py-3 rounded-md text-sm font-bold transition-all">
+      Talk to a human
+    </button>
+  </header>
+
+  <div class="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4">
+    <nav class="flex items-center gap-2 text-xs opacity-60 mb-12">
+      <a href="#"><img src="home-icon.svg" class="w-3 h-3 invert" alt="Home"></a>
+      <span>/</span>
+      <a href="#" class="hover:underline">Case Studies</a>
+      <span>/</span>
+      <span class="opacity-100">200% increase in conversion rate for Lovato Company</span>
+    </nav>
+
+    <div class="mb-6">
+      <div class="flex items-center justify-center gap-2 text-[#FF7A00] font-bold text-3xl italic">
+        <span class="text-4xl">↑</span> forsale
+      </div>
+    </div>
+
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black max-w-4xl leading-tight">
+      200% increase in conversion rate for Lovato Company
+    </h1>
+  </div>
+</section>
+
+</body>
+</html>
