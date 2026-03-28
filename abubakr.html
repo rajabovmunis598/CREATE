@@ -6,255 +6,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services</title>
     <link rel="stylesheet" href="./src/output.css" />
+    <style>
+        .background {
+            background-image: url(./image/backgroundHero.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
 </head>
-<style>
-    * {
-        box-sizing: border-box;
-    }
 
-    .background {
-        background-image: url(./image/backgroundHero.jpg);
-        height: 800px;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+<body class="text-[#1E212C]">
+    <header class="background">
+        <div class="bg-[#1E212C]/75">
+            <nav
+                class="mx-auto flex max-w-[1200px] flex-col gap-4 px-4 py-6 text-white sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:gap-6 lg:py-10">
+                <div class="flex items-center justify-between gap-4">
+                    <img src="./image/logo.svg" alt="Createx logo" />
+                </div>
 
-    @media (max-width: 500px) {
-        ul {
-            display: none;
-        }
-
-        nav {
-            width: 90%;
-        }
-
-        .afterNav {
-            width: 90%;
-            display: flex;
-            justify-content: start;
-            padding-top: 5px;
-
-            :nth-child(1) {
-                cursor: pointer;
-            }
-        }
-
-        .afterNav:nth-child(2) {
-            cursor: pointer;
-        }
-
-        .afterNav:nth-child(3) {
-            cursor: pointer;
-            font-size: 40px !important;
-        }
-
-        .headerTit {
-            font-size: 30px;
-        }
-
-        .info {
-            font-size: 16px;
-        }
-
-        .lastLine {
-            width: 90%;
-            margin: auto;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .firstIl {
-            width: 90%;
-            flex-direction: column;
-            height: 100vh;
-            padding: 0px;
-        }
-
-        .social {
-            font-size: 20px;
-            width: 100%;
-        }
-
-        .socialleft {
-            width: 90%;
-            text-align: center;
-        }
-
-        .socialBtn {
-            text-align: center;
-            width: 90%;
-            margin: auto;
-        }
-
-        .colluming {
-            flex-direction: column;
-        }
-    }
-</style>
-
-<body>
-    <header class="background h-[800px]">
-        <nav class="flex justify-between items-center max-w-[1200px] m-auto pt-10 text-white">
-            <div><img src="./image/logo.svg" alt="" /></div>
-            <div>
-                <ul class="flex items-center gap-[40px] justify-around">
-                    <li class="hover:cursor-pointer">Services</li>
-                    <li class="text-[#A6A7B0] hover:text-white cursor-pointer">
-                        Case Studies
-                    </li>
-                    <li class="text-[#A6A7B0] hover:text-white cursor-pointer">
-                        About Us
-                    </li>
-                    <li class="text-[#A6A7B0] hover:text-white cursor-pointer">Blog</li>
-                    <li class="text-[#A6A7B0] hover:text-white cursor-pointer">
-                        Contacts
-                    </li>
+                <ul class="hidden flex-wrap items-center gap-6 text-sm font-medium text-[#A6A7B0] lg:flex xl:gap-10">
+                    <li class="cursor-pointer text-white">Services</li>
+                    <li class="cursor-pointer transition hover:text-white">Case Studies</li>
+                    <li class="cursor-pointer transition hover:text-white">About Us</li>
+                    <li class="cursor-pointer transition hover:text-white">Blog</li>
+                    <li class="cursor-pointer transition hover:text-white">Contacts</li>
                 </ul>
-            </div>
-            <div>
-                <button class="bg-[#7772F1] px-[30px] py-[10px] cursor-pointer rounded-[5px]">
+
+                <button
+                    class="w-full rounded-[5px] bg-[#7772F1] px-6 py-3 text-sm font-semibold transition hover:bg-[#5f5ad7] sm:w-auto">
                     Talk to a human
                 </button>
-            </div>
-        </nav>
-        <section
-            class="afterNav max-w-[1200px] flex items-center justify-center gap-[20px] m-auto py-[40px] text-white">
-            <div>
-                <a href="./index.html"><img src="./image/Home.svg" alt="" /></a>
-            </div>
-            <div>></div>
-            <div>Services</div>
-        </section>
-        <section class="lastLine max-w-[1200px] m-auto text-white text-center">
-            <h1 class="headerTit font-black text-[72px] pb-[50px]">Our Services</h1>
-            <p class="info font-normal text-[30px] text-[#A6A7B0]">
-                We offer more than services. Our agency provides solutions to your
-                top-priority concerns,<br />
-                involving customer targeting, email performance and sales growth. If
-                there is no existing <br />
-                solution readily available, we create one, specifically to suit your
-                business.
-            </p>
-            <div class="flex m-auto max-w-[1200px] justify-center gap-[40px] pt-[30px]">
-                <button
-                    class="border-3 border-white text-white border-solid py-[7px] px-[27px] cursor-pointer hover:bg-white hover:text-black hover:border-black">
-                    start now</button><button class="cursor-pointer">
-                    <img src="./image/call.svg" alt="" />
-                </button>
-            </div>
-        </section>
+            </nav>
+
+            <section
+                class="mx-auto flex max-w-[1200px] flex-wrap items-center gap-3 px-4 pb-8 text-sm text-white/80 sm:px-6 md:pb-10">
+                <a href="./index.html" class="flex items-center">
+                    <img src="./image/Home.svg" alt="Home" />
+                </a>
+                <span>&gt;</span>
+                <span>Services</span>
+            </section>
+
+            <section class="mx-auto max-w-[1200px] px-4 pb-16 text-center text-white sm:px-6 md:pb-20 lg:pb-24">
+                <h1 class="text-[42px] font-black leading-tight md:text-[56px] lg:text-[72px]">Our Services</h1>
+                <p
+                    class="mx-auto mt-6 max-w-4xl text-base leading-7 text-[#A6A7B0] md:mt-8 md:text-xl md:leading-9">
+                    We offer more than services. Our agency provides solutions to your top-priority concerns,
+                    involving customer targeting, email performance and sales growth. If there is no existing
+                    solution readily available, we create one, specifically to suit your business.
+                </p>
+                <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
+                    <button
+                        class="rounded-[7px] border border-white px-7 py-3 text-sm font-semibold uppercase tracking-wide transition hover:bg-white hover:text-black">
+                        Start now
+                    </button>
+                    <button class="flex items-center justify-center rounded-[10px]">
+                        <img src="./image/call.svg" alt="Call" />
+                    </button>
+                </div>
+            </section>
+        </div>
     </header>
+
     <main>
-        <section class="firstIl flex max-w-[1200px] m-auto items-center h-[500px] justify-center gap-[50px]">
-            <div class="socialleft w-[50%]">
-                <h3 class="font-bold text-[35px] social">Social Media Marketing</h3>
-                <p class="socialInfo text-gray-400 lin-h text-[16px] leading-[30px] pb-[20px]">
-                    Eleifend orci massa et facilisis orci feugiat ac. Congue in ut
-                    lacus, turpis accumsan gravida. Aliquet mattis dignissim massa
-                    sociis a, id bibendum. Egestas lorem eros, mi cras amet, vel eget
-                    molestie. Turpis enim arcu, amet donec massa pellentesque nulla
-                    duis. Arcu dictum metus sed purus senectus faucibus eget elementum
-                    pretium.
+        <section
+            class="mx-auto flex max-w-[1200px] flex-col gap-10 px-4 py-16 sm:px-6 md:py-20 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
+            <div class="w-full max-w-[560px] text-center lg:text-left">
+                <h2 class="text-3xl font-bold leading-tight md:text-[35px]">Social Media Marketing</h2>
+                <p class="mt-5 text-[16px] leading-8 text-gray-500">
+                    Eleifend orci massa et facilisis orci feugiat ac. Congue in ut lacus, turpis accumsan gravida.
+                    Aliquet mattis dignissim massa sociis a, id bibendum. Egestas lorem eros, mi cras amet, vel eget
+                    molestie. Turpis enim arcu, amet donec massa pellentesque nulla duis. Arcu dictum metus sed purus
+                    senectus faucibus eget elementum pretium.
                 </p>
-                <div class="socialBtn flex gap-[10px]">
+                <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
                     <button
-                        class="text-purple-400 border-purple-400 border-[2px] border-solid py-[7px] px-[15px] cursor-pointer rounded-[7px]">
-                        Learn more</button><button
-                        class="text-white bg-purple-400 border-none border-solid py-[7px] px-[15px] cursor-pointer rounded-[7px]">
+                        class="rounded-[7px] border-2 border-purple-400 px-4 py-3 font-medium text-purple-400 transition hover:bg-purple-50">
+                        Learn more
+                    </button>
+                    <button
+                        class="rounded-[7px] bg-purple-400 px-4 py-3 font-medium text-white transition hover:bg-purple-500">
                         Try SEO toolkit
                     </button>
                 </div>
             </div>
-            <div class="flex">
-                <img src="./image/illustrationstart.svg" alt="" />
+
+            <div class="w-full max-w-[480px] self-center">
+                <img class="w-full" src="./image/illustrationstart.svg" alt="Social media marketing illustration" />
             </div>
         </section>
 
-        <!-- //next -->
-
-        <section class="firstIl flex max-w-[1200px] m-auto items-center h-[500px] justify-center gap-[50px]">
-            <div class="flex">
-                <img src="./image/illustration2.svg" alt="" />
+        <section
+            class="mx-auto flex max-w-[1200px] flex-col gap-10 px-4 py-16 sm:px-6 md:py-20 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
+            <div class="w-full max-w-[480px] self-center">
+                <img class="w-full" src="./image/illustration2.svg" alt="SEO illustration" />
             </div>
-            <div class="socialleft w-[50%]">
-                <h3 class="font-bold text-[35px] social">
-                    Search Engine Optimization
-                </h3>
-                <p class="socialInfo text-gray-400 lin-h text-[16px] leading-[30px] pb-[20px]">
-                    Elementum ipsum lorem tortor morbi quis turpis pellentesque ultrices
-                    aenean. Lacus sit viverra et egestas nisl vitae lacus, eget. Eu
-                    pulvinar duis in posuere non adipiscing. Nunc, tristique viverra
-                    tincidunt nec proin tempus egestas massa. Quis velit nunc nisl sem
-                    in tristique..
+
+            <div class="w-full max-w-[560px] text-center lg:text-left">
+                <h2 class="text-3xl font-bold leading-tight md:text-[35px]">Search Engine Optimization</h2>
+                <p class="mt-5 text-[16px] leading-8 text-gray-500">
+                    Elementum ipsum lorem tortor morbi quis turpis pellentesque ultrices aenean. Lacus sit viverra et
+                    egestas nisl vitae lacus, eget. Eu pulvinar duis in posuere non adipiscing. Nunc, tristique
+                    viverra tincidunt nec proin tempus egestas massa. Quis velit nunc nisl sem in tristique.
                 </p>
-                <div class="socialBtn flex gap-[10px]">
+                <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
                     <button
-                        class="text-purple-400 border-purple-400 border-[2px] border-solid py-[7px] px-[15px] cursor-pointer rounded-[7px]">
-                        Learn more</button><button
-                        class="text-white bg-purple-400 border-none border-solid py-[7px] px-[15px] cursor-pointer rounded-[7px]">
+                        class="rounded-[7px] border-2 border-purple-400 px-4 py-3 font-medium text-purple-400 transition hover:bg-purple-50">
+                        Learn more
+                    </button>
+                    <button
+                        class="rounded-[7px] bg-purple-400 px-4 py-3 font-medium text-white transition hover:bg-purple-500">
                         Try SEO toolkit
                     </button>
                 </div>
             </div>
         </section>
 
-        <!-- //next -->
-
-        <section class="firstIl flex max-w-[1200px] m-auto items-center h-[500px] justify-center gap-[50px]">
-            <div class="socialleft w-[50%]">
-                <h3 class="font-bold text-[35px] social">Research Service</h3>
-                <p class="socialInfo text-gray-400 lin-h text-[16px] leading-[30px] pb-[20px]">
-                    Volutpat tellus mauris sit sit. Posuere ut sit vestibulum amet
-                    viverra in. Est nulla lectus purus tincidunt massa tortor. Hendrerit
-                    vulputate elementum blandit massa vitae amet felis eget.
+        <section
+            class="mx-auto flex max-w-[1200px] flex-col gap-10 px-4 py-16 sm:px-6 md:py-20 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
+            <div class="w-full max-w-[560px] text-center lg:text-left">
+                <h2 class="text-3xl font-bold leading-tight md:text-[35px]">Research Service</h2>
+                <p class="mt-5 text-[16px] leading-8 text-gray-500">
+                    Volutpat tellus mauris sit sit. Posuere ut sit vestibulum amet viverra in. Est nulla lectus purus
+                    tincidunt massa tortor. Hendrerit vulputate elementum blandit massa vitae amet felis eget.
                 </p>
-                <div class="socialBtn flex gap-[10px]">
+                <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
                     <button
-                        class="text-purple-400 border-purple-400 border-[2px] border-solid py-[7px] px-[15px] cursor-pointer rounded-[7px]">
-                        Learn more</button><button
-                        class="text-white bg-purple-400 border-none border-solid py-[7px] px-[15px] cursor-pointer rounded-[7px]">
+                        class="rounded-[7px] border-2 border-purple-400 px-4 py-3 font-medium text-purple-400 transition hover:bg-purple-50">
+                        Learn more
+                    </button>
+                    <button
+                        class="rounded-[7px] bg-purple-400 px-4 py-3 font-medium text-white transition hover:bg-purple-500">
                         Try SEO toolkit
                     </button>
                 </div>
             </div>
-            <div class="flex">
-                <img src="./image/illustration3.svg" alt="" />
+
+            <div class="w-full max-w-[480px] self-center">
+                <img class="w-full" src="./image/illustration3.svg" alt="Research service illustration" />
             </div>
         </section>
 
-        <!-- colluming -->
-        <section class="bg-[#1E212C] w-full min-h-[800px] flex justify-center items-center px-4 py-10">
-            <div
-                class="max-w-[1200px] w-full flex flex-col md:flex-row items-center justify-center gap-10 md:gap-[70px]">
-
-                <div>
-                    <img class="w-full max-w-[500px]" src="./image/illustration6.svg" alt="">
+        <section class="bg-[#1E212C] px-4 py-14 sm:px-6 md:py-20">
+            <div class="mx-auto flex max-w-[1200px] flex-col items-center gap-10 lg:flex-row lg:gap-16">
+                <div class="w-full max-w-[500px]">
+                    <img class="w-full" src="./image/illustration6.svg" alt="SEO analysis illustration" />
                 </div>
 
                 <div class="w-full max-w-[600px]">
-                    <h2 class="text-[28px] md:text-[35px] font-bold text-white text-left pb-6 md:pb-[30px]">
-                        Get free SEO analysis
-                    </h2>
+                    <h2 class="text-[28px] font-bold text-white md:text-[35px]">Get free SEO analysis</h2>
 
-                    <form class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-[20px]" action="">
-                        <input class="bg-gray-400 h-[40px] placeholder:pl-[15px] rounded-[5px] placeholder:text-white"
-                            placeholder="Your name" type="text">
+                    <form class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5" action="">
+                        <input class="h-12 rounded-[5px] bg-white/20 px-4 text-white placeholder:text-white/70"
+                            placeholder="Your name" type="text" />
 
-                        <input class="bg-gray-400 h-[40px] placeholder:pl-[15px] rounded-[5px] placeholder:text-white"
-                            placeholder="Your email" type="email">
+                        <input class="h-12 rounded-[5px] bg-white/20 px-4 text-white placeholder:text-white/70"
+                            placeholder="Your email" type="email" />
 
-                        <input
-                            class="bg-gray-400 md:col-span-2 h-[40px] placeholder:pl-[15px] rounded-[5px] placeholder:text-white"
-                            placeholder="Your url" type="url">
+                        <input class="h-12 rounded-[5px] bg-white/20 px-4 text-white placeholder:text-white/70 md:col-span-2"
+                            placeholder="Your url" type="url" />
 
-                        <div class="md:col-span-2 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                            <label class="flex items-start text-white gap-3">
-                                <input class="mt-1" type="checkbox">
+                        <div class="flex flex-col gap-4 md:col-span-2 md:flex-row md:items-center md:justify-between">
+                            <label class="flex items-start gap-3 text-white/90">
+                                <input class="mt-1" type="checkbox" />
                                 <span>I agree to receive communications from Createx SEO Agency</span>
                             </label>
 
-                            <button class="text-white px-[40px] rounded-[7px] py-[7px] bg-purple-600">
+                            <button
+                                class="w-full rounded-[7px] bg-purple-600 px-10 py-3 font-medium text-white transition hover:bg-purple-500 sm:w-auto">
                                 Submit
                             </button>
                         </div>
@@ -262,7 +182,6 @@
                 </div>
             </div>
         </section>
-
     </main>
 </body>
 
