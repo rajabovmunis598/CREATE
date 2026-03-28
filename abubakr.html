@@ -4,185 +4,733 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="./src/output.css" />
-    <style>
-        .background {
-            background-image: url(./image/backgroundHero.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-    </style>
 </head>
 
-<body class="text-[#1E212C]">
-    <header class="background">
-        <div class="bg-[#1E212C]/75">
-            <nav
-                class="mx-auto flex max-w-[1200px] flex-col gap-4 px-4 py-6 text-white sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:gap-6 lg:py-10">
-                <div class="flex items-center justify-between gap-4">
-                    <img src="./image/logo.svg" alt="Createx logo" />
+<body id="top" class="bg-white text-[#1E212C]">
+    <header class="relative overflow-hidden bg-[#1E1F2D]"
+        style="background-image: linear-gradient(rgba(30, 33, 44, 0.84), rgba(30, 33, 44, 0.84)), url('./image/backgroundHero.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <div class="mx-auto max-w-[1230px] px-4 sm:px-6">
+            <nav class="flex flex-col gap-5 py-6 text-white lg:flex-row lg:items-center lg:justify-between lg:py-8">
+                <a href="./index.html" class="mx-auto lg:mx-0">
+                    <img src="./image/logo.svg" alt="Createx logo" class="h-5 w-auto" />
+                </a>
+
+                <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-10">
+                    <ul
+                        class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm font-medium text-white/70">
+                        <li><a href="./Rukhshona.html" class="transition hover:text-white">Services</a></li>
+                        <li><a href="./index_munis.html" class="transition hover:text-white">Case Studies</a></li>
+                        <li><a href="./abubakr.html" class="text-white">About Us</a></li>
+                        <li><a href="./index.html" class="transition hover:text-white">Blog</a></li>
+                        <li><a href="./index.html" class="transition hover:text-white">Contacts</a></li>
+                    </ul>
+
+                    <a href="./index.html"
+                        class="mx-auto inline-flex h-11 items-center justify-center rounded-[4px] bg-[#7772F1] px-8 text-sm font-bold text-white transition hover:bg-[#635dd8] lg:mx-0">
+                        Talk to a human
+                    </a>
                 </div>
-
-                <ul class="hidden flex-wrap items-center gap-6 text-sm font-medium text-[#A6A7B0] lg:flex xl:gap-10">
-                    <li class="cursor-pointer text-white">Services</li>
-                    <li class="cursor-pointer transition hover:text-white">Case Studies</li>
-                    <li class="cursor-pointer transition hover:text-white">About Us</li>
-                    <li class="cursor-pointer transition hover:text-white">Blog</li>
-                    <li class="cursor-pointer transition hover:text-white">Contacts</li>
-                </ul>
-
-                <button
-                    class="w-full rounded-[5px] bg-[#7772F1] px-6 py-3 text-sm font-semibold transition hover:bg-[#5f5ad7] sm:w-auto">
-                    Talk to a human
-                </button>
             </nav>
 
-            <section
-                class="mx-auto flex max-w-[1200px] flex-wrap items-center gap-3 px-4 pb-8 text-sm text-white/80 sm:px-6 md:pb-10">
-                <a href="./index.html" class="flex items-center">
-                    <img src="./image/Home.svg" alt="Home" />
-                </a>
-                <span>&gt;</span>
-                <span>Services</span>
+            <section class="mx-auto max-w-[820px] px-2 pb-10 pt-8 text-center text-white sm:pb-14 lg:pb-16 lg:pt-10">
+                <div class="flex flex-wrap items-center justify-center gap-2 text-sm text-white/60">
+                    <a href="./index.html" class="inline-flex items-center">
+                        <img src="./image/Home.svg" alt="Home" class="h-4 w-4" />
+                    </a>
+                    <span>&gt;</span>
+                    <span class="text-white">About Us</span>
+                </div>
+
+                <h1 class="mt-10 text-[40px] font-black leading-tight sm:text-[52px] lg:text-[72px]">
+                    About Us
+                </h1>
+
+                <p class="mx-auto mt-6 max-w-[760px] text-[15px] leading-7 text-white/70 sm:text-base sm:leading-8">
+                    Our agency has been successfully operating in digital marketing since 2012. We are proud to offer
+                    quality service, strong strategy, and a team that helps brands grow faster through thoughtful SEO
+                    and performance-driven marketing.
+                </p>
             </section>
 
-            <section class="mx-auto max-w-[1200px] px-4 pb-16 text-center text-white sm:px-6 md:pb-20 lg:pb-24">
-                <h1 class="text-[42px] font-black leading-tight md:text-[56px] lg:text-[72px]">Our Services</h1>
-                <p
-                    class="mx-auto mt-6 max-w-4xl text-base leading-7 text-[#A6A7B0] md:mt-8 md:text-xl md:leading-9">
-                    We offer more than services. Our agency provides solutions to your top-priority concerns,
-                    involving customer targeting, email performance and sales growth. If there is no existing
-                    solution readily available, we create one, specifically to suit your business.
-                </p>
-                <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
-                    <button
-                        class="rounded-[7px] border border-white px-7 py-3 text-sm font-semibold uppercase tracking-wide transition hover:bg-white hover:text-black">
-                        Start now
-                    </button>
-                    <button class="flex items-center justify-center rounded-[10px]">
-                        <img src="./image/call.svg" alt="Call" />
-                    </button>
+            <section class="border-t border-white/10 py-6 sm:py-8">
+                <div class="grid gap-4 md:grid-cols-3 md:gap-8">
+                    <article
+                        class="flex items-center justify-center gap-4 rounded-[12px] bg-white/5 px-4 py-4 text-left text-white md:justify-start md:bg-transparent md:px-0 md:py-0">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-full border border-white/15">
+                            <img src="./image/ic-startup.png" alt="SEO Content Strategy" class="h-6 w-6" />
+                        </div>
+                        <p class="text-sm font-medium">SEO Content Strategy</p>
+                    </article>
+
+                    <article
+                        class="flex items-center justify-center gap-4 rounded-[12px] bg-white/5 px-4 py-4 text-left text-white md:justify-start md:bg-transparent md:px-0 md:py-0">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-full border border-white/15">
+                            <img src="./image/ic-cart.png" alt="Content Marketing" class="h-6 w-6" />
+                        </div>
+                        <p class="text-sm font-medium">Content Marketing</p>
+                    </article>
+
+                    <article
+                        class="flex items-center justify-center gap-4 rounded-[12px] bg-white/5 px-4 py-4 text-left text-white md:justify-start md:bg-transparent md:px-0 md:py-0">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-full border border-white/15">
+                            <img src="./image/ic-website.png" alt="Website & Social Media Marketing" class="h-6 w-6" />
+                        </div>
+                        <p class="text-sm font-medium">Website &amp; Social Media Marketing</p>
+                    </article>
                 </div>
             </section>
         </div>
     </header>
 
     <main>
-        <section
-            class="mx-auto flex max-w-[1200px] flex-col gap-10 px-4 py-16 sm:px-6 md:py-20 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
-            <div class="w-full max-w-[560px] text-center lg:text-left">
-                <h2 class="text-3xl font-bold leading-tight md:text-[35px]">Social Media Marketing</h2>
-                <p class="mt-5 text-[16px] leading-8 text-gray-500">
-                    Eleifend orci massa et facilisis orci feugiat ac. Congue in ut lacus, turpis accumsan gravida.
-                    Aliquet mattis dignissim massa sociis a, id bibendum. Egestas lorem eros, mi cras amet, vel eget
-                    molestie. Turpis enim arcu, amet donec massa pellentesque nulla duis. Arcu dictum metus sed purus
-                    senectus faucibus eget elementum pretium.
-                </p>
-                <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
-                    <button
-                        class="rounded-[7px] border-2 border-purple-400 px-4 py-3 font-medium text-purple-400 transition hover:bg-purple-50">
-                        Learn more
-                    </button>
-                    <button
-                        class="rounded-[7px] bg-purple-400 px-4 py-3 font-medium text-white transition hover:bg-purple-500">
-                        Try SEO toolkit
-                    </button>
-                </div>
-            </div>
-
-            <div class="w-full max-w-[480px] self-center">
-                <img class="w-full" src="./image/illustrationstart.svg" alt="Social media marketing illustration" />
-            </div>
-        </section>
-
-        <section
-            class="mx-auto flex max-w-[1200px] flex-col gap-10 px-4 py-16 sm:px-6 md:py-20 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
-            <div class="w-full max-w-[480px] self-center">
-                <img class="w-full" src="./image/illustration2.svg" alt="SEO illustration" />
-            </div>
-
-            <div class="w-full max-w-[560px] text-center lg:text-left">
-                <h2 class="text-3xl font-bold leading-tight md:text-[35px]">Search Engine Optimization</h2>
-                <p class="mt-5 text-[16px] leading-8 text-gray-500">
-                    Elementum ipsum lorem tortor morbi quis turpis pellentesque ultrices aenean. Lacus sit viverra et
-                    egestas nisl vitae lacus, eget. Eu pulvinar duis in posuere non adipiscing. Nunc, tristique
-                    viverra tincidunt nec proin tempus egestas massa. Quis velit nunc nisl sem in tristique.
-                </p>
-                <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
-                    <button
-                        class="rounded-[7px] border-2 border-purple-400 px-4 py-3 font-medium text-purple-400 transition hover:bg-purple-50">
-                        Learn more
-                    </button>
-                    <button
-                        class="rounded-[7px] bg-purple-400 px-4 py-3 font-medium text-white transition hover:bg-purple-500">
-                        Try SEO toolkit
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <section
-            class="mx-auto flex max-w-[1200px] flex-col gap-10 px-4 py-16 sm:px-6 md:py-20 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
-            <div class="w-full max-w-[560px] text-center lg:text-left">
-                <h2 class="text-3xl font-bold leading-tight md:text-[35px]">Research Service</h2>
-                <p class="mt-5 text-[16px] leading-8 text-gray-500">
-                    Volutpat tellus mauris sit sit. Posuere ut sit vestibulum amet viverra in. Est nulla lectus purus
-                    tincidunt massa tortor. Hendrerit vulputate elementum blandit massa vitae amet felis eget.
-                </p>
-                <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
-                    <button
-                        class="rounded-[7px] border-2 border-purple-400 px-4 py-3 font-medium text-purple-400 transition hover:bg-purple-50">
-                        Learn more
-                    </button>
-                    <button
-                        class="rounded-[7px] bg-purple-400 px-4 py-3 font-medium text-white transition hover:bg-purple-500">
-                        Try SEO toolkit
-                    </button>
-                </div>
-            </div>
-
-            <div class="w-full max-w-[480px] self-center">
-                <img class="w-full" src="./image/illustration3.svg" alt="Research service illustration" />
-            </div>
-        </section>
-
-        <section class="bg-[#1E212C] px-4 py-14 sm:px-6 md:py-20">
-            <div class="mx-auto flex max-w-[1200px] flex-col items-center gap-10 lg:flex-row lg:gap-16">
-                <div class="w-full max-w-[500px]">
-                    <img class="w-full" src="./image/illustration6.svg" alt="SEO analysis illustration" />
-                </div>
-
-                <div class="w-full max-w-[600px]">
-                    <h2 class="text-[28px] font-bold text-white md:text-[35px]">Get free SEO analysis</h2>
-
-                    <form class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5" action="">
-                        <input class="h-12 rounded-[5px] bg-white/20 px-4 text-white placeholder:text-white/70"
-                            placeholder="Your name" type="text" />
-
-                        <input class="h-12 rounded-[5px] bg-white/20 px-4 text-white placeholder:text-white/70"
-                            placeholder="Your email" type="email" />
-
-                        <input class="h-12 rounded-[5px] bg-white/20 px-4 text-white placeholder:text-white/70 md:col-span-2"
-                            placeholder="Your url" type="url" />
-
-                        <div class="flex flex-col gap-4 md:col-span-2 md:flex-row md:items-center md:justify-between">
-                            <label class="flex items-start gap-3 text-white/90">
-                                <input class="mt-1" type="checkbox" />
-                                <span>I agree to receive communications from Createx SEO Agency</span>
-                            </label>
-
-                            <button
-                                class="w-full rounded-[7px] bg-purple-600 px-10 py-3 font-medium text-white transition hover:bg-purple-500 sm:w-auto">
-                                Submit
-                            </button>
+        <section class="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-24">
+            <div class="mx-auto max-w-[1230px] px-4 sm:px-6">
+                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
+                    <article class="flex flex-col items-center text-center">
+                        <div
+                            class="flex h-24 w-24 items-center justify-center rounded-full border-3 border-[#F89828] text-[26px] font-bold text-[#1E212C]">
+                            10
                         </div>
+                        <p class="mt-4 text-sm font-medium text-[#787A80]">Years of experience</p>
+                    </article>
+
+                    <article class="flex flex-col items-center text-center">
+                        <div
+                            class="flex h-24 w-24 items-center justify-center rounded-full border-3 border-[#F52F6E] text-[26px] font-bold text-[#1E212C]">
+                            45
+                        </div>
+                        <p class="mt-4 text-sm font-medium text-[#787A80]">Awards and recognitions</p>
+                    </article>
+
+                    <article class="flex flex-col items-center text-center">
+                        <div
+                            class="flex h-24 w-24 items-center justify-center rounded-full border-3 border-[#6A5AF9] text-[26px] font-bold text-[#1E212C]">
+                            540+
+                        </div>
+                        <p class="mt-4 text-sm font-medium text-[#787A80]">Successful projects</p>
+                    </article>
+
+                    <article class="flex flex-col items-center text-center">
+                        <div
+                            class="flex h-24 w-24 items-center justify-center rounded-full border-3 border-[#03CEA4] text-[26px] font-bold text-[#1E212C]">
+                            100%
+                        </div>
+                        <p class="mt-4 text-sm font-medium text-[#787A80]">Client satisfaction rate</p>
+                    </article>
+                </div>
+
+                <div class="mx-auto mt-14 max-w-[810px] sm:mt-16 lg:mt-20">
+                    <div class="relative overflow-hidden rounded-[4px] shadow-[0_30px_60px_rgba(30,33,44,0.12)]">
+                        <img src="./image/pic.png" alt="Video preview"
+                            class="h-[240px] w-full object-cover sm:h-[320px] lg:h-[360px]" />
+                        <div class="absolute inset-0 bg-[#1E212C]/30"></div>
+
+                        <div class="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
+                            <button
+                                class="flex h-14 w-14 items-center justify-center rounded-full bg-[#7772F1] shadow-[0_12px_24px_rgba(119,114,241,0.35)] transition hover:scale-105"
+                                aria-label="Play company video">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="ml-1 h-5 w-5 text-white">
+                                    <path d="M8 6.5v11l9-5.5-9-5.5Z" />
+                                </svg>
+                            </button>
+
+                            <p class="mt-6 max-w-[320px] text-[18px] font-bold uppercase tracking-[0.38em] text-white sm:text-[22px]">
+                                Content is King
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-16 sm:py-20 lg:py-24">
+            <div class="mx-auto max-w-[1230px] px-4 sm:px-6">
+                <div class="grid gap-12 lg:grid-cols-[280px_minmax(0,1fr)] lg:items-start lg:gap-16">
+                    <div class="max-w-[260px]">
+                        <p class="text-[32px] font-black leading-tight text-[#1E212C] sm:text-[40px]">
+                            The core values we stand for
+                        </p>
+                    </div>
+
+                    <div class="grid gap-8 sm:grid-cols-2">
+                        <article class="max-w-[340px]">
+                            <div
+                                class="flex h-12 w-12 items-center justify-center rounded-[12px] bg-[#7772F1]/8 text-[#7772F1]">
+                                <img src="./image/icon1.png" alt="Respect" class="h-7 w-7" />
+                            </div>
+                            <h3 class="mt-5 text-xl font-bold text-[#1E212C]">Respect</h3>
+                            <p class="mt-3 text-sm leading-7 text-[#787A80]">
+                                We value every client and teammate, building long-term relationships through honest
+                                communication, thoughtful strategy, and dependable execution.
+                            </p>
+                        </article>
+
+                        <article class="max-w-[340px]">
+                            <div
+                                class="flex h-12 w-12 items-center justify-center rounded-[12px] bg-[#7772F1]/8 text-[#7772F1]">
+                                <img src="./image/icon2.png" alt="Transparency" class="h-7 w-7" />
+                            </div>
+                            <h3 class="mt-5 text-xl font-bold text-[#1E212C]">Transparency</h3>
+                            <p class="mt-3 text-sm leading-7 text-[#787A80]">
+                                Clear reporting, understandable processes, and realistic goals help us keep every
+                                project aligned and every decision grounded in data.
+                            </p>
+                        </article>
+
+                        <article class="max-w-[340px]">
+                            <div
+                                class="flex h-12 w-12 items-center justify-center rounded-[12px] bg-[#7772F1]/8 text-[#7772F1]">
+                                <img src="./image/icon3.png" alt="Commitment" class="h-7 w-7" />
+                            </div>
+                            <h3 class="mt-5 text-xl font-bold text-[#1E212C]">Commitment</h3>
+                            <p class="mt-3 text-sm leading-7 text-[#787A80]">
+                                We stay focused on outcomes, move proactively, and keep improving each campaign until
+                                it reaches strong measurable performance.
+                            </p>
+                        </article>
+
+                        <article class="max-w-[340px]">
+                            <div
+                                class="flex h-12 w-12 items-center justify-center rounded-[12px] bg-[#7772F1]/8 text-[#7772F1]">
+                                <img src="./image/icon4.png" alt="Cooperation" class="h-7 w-7" />
+                            </div>
+                            <h3 class="mt-5 text-xl font-bold text-[#1E212C]">Cooperation</h3>
+                            <p class="mt-3 text-sm leading-7 text-[#787A80]">
+                                Great results come from shared effort, so we work closely with clients and inside the
+                                team to turn ideas into consistent growth.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-16 sm:py-20 lg:py-24">
+            <div class="mx-auto max-w-[1230px] px-4 sm:px-6">
+                <div class="relative">
+                    <div class="grid gap-4 md:grid-cols-12 md:grid-rows-[220px_220px] lg:gap-6">
+                        <div class="overflow-hidden rounded-[4px] md:col-span-3 md:row-span-1">
+                            <img src="./image/pic.png" alt="Team at work" class="h-full w-full object-cover" />
+                        </div>
+
+                        <div class="overflow-hidden rounded-[4px] md:col-span-4 md:row-span-2">
+                            <img src="./image/woman.png" alt="Analytics review" class="h-full w-full object-cover" />
+                        </div>
+
+                        <div class="overflow-hidden rounded-[4px] md:col-span-5 md:row-span-1">
+                            <img src="./image/image.png" alt="Project discussion" class="h-full w-full object-cover" />
+                        </div>
+
+                        <div class="overflow-hidden rounded-[4px] md:col-span-3 md:row-span-1">
+                            <img src="./image/b.png" alt="Agency workflow" class="h-full w-full object-cover" />
+                        </div>
+                    </div>
+
+                    <div
+                        class="relative z-10 mx-auto mt-6 max-w-[640px] rounded-[4px] bg-white px-6 py-8 shadow-[0_30px_60px_rgba(30,33,44,0.12)] sm:px-8 md:-mt-20 md:ml-[22%] lg:px-10">
+                        <h2 class="text-[28px] font-bold text-[#1E212C]">More than SEO agency</h2>
+                        <p class="mt-4 text-sm leading-7 text-[#787A80]">
+                            We build long-term partnerships with brands, combining analytics, strategy, and creative
+                            execution to deliver measurable marketing growth.
+                        </p>
+
+                        <div class="mt-6 grid gap-3 text-sm text-[#424551] sm:grid-cols-2">
+                            <p class="flex items-start gap-3">
+                                <span class="mt-1 h-2 w-2 rounded-full bg-[#7772F1]"></span>
+                                <span>Strategic thinking tailored to each business.</span>
+                            </p>
+                            <p class="flex items-start gap-3">
+                                <span class="mt-1 h-2 w-2 rounded-full bg-[#7772F1]"></span>
+                                <span>Transparent communication and clear reporting.</span>
+                            </p>
+                            <p class="flex items-start gap-3">
+                                <span class="mt-1 h-2 w-2 rounded-full bg-[#7772F1]"></span>
+                                <span>Cross-functional team with real campaign experience.</span>
+                            </p>
+                            <p class="flex items-start gap-3">
+                                <span class="mt-1 h-2 w-2 rounded-full bg-[#7772F1]"></span>
+                                <span>Focus on sustainable growth, not short-term vanity metrics.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-16 sm:py-20 lg:py-24">
+            <div class="mx-auto max-w-[1230px] px-4 sm:px-6">
+                <div class="grid gap-12 lg:grid-cols-[320px_minmax(0,1fr)] lg:items-center lg:gap-16">
+                    <div class="mx-auto max-w-[320px]">
+                        <img src="./image/illustration (5).png" alt="Awards illustration" class="w-full" />
+                    </div>
+
+                    <div>
+                        <h2 class="text-center text-[32px] font-black leading-tight text-[#1E212C] sm:text-[40px] lg:text-left">
+                            We are proud of our awards
+                        </h2>
+
+                        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:gap-6">
+                            <article class="rounded-[4px] border border-[#E5E8ED] bg-white px-5 py-5">
+                                <img src="./image/award.png" alt="Clutch award" class="h-12 w-auto" />
+                                <p class="mt-4 text-sm font-bold text-[#1E212C]">Top SEO Agencies 2020</p>
+                                <p class="mt-2 text-sm leading-6 text-[#787A80]">
+                                    Reviewed on Clutch and recognised for consistent client satisfaction and strong
+                                    campaign results.
+                                </p>
+                            </article>
+
+                            <article class="rounded-[4px] border border-[#E5E8ED] bg-white px-5 py-5">
+                                <img src="./image/image (7).png" alt="GoodFirms award" class="h-12 w-auto" />
+                                <p class="mt-4 text-sm font-bold text-[#1E212C]">Top SEO Services Firm</p>
+                                <p class="mt-2 text-sm leading-6 text-[#787A80]">
+                                    Featured by GoodFirms for performance-focused strategy, communication, and delivery.
+                                </p>
+                            </article>
+
+                            <article class="rounded-[4px] border border-[#E5E8ED] bg-white px-5 py-5">
+                                <img src="./image/award (1).png" alt="Google partner award" class="h-12 w-auto" />
+                                <p class="mt-4 text-sm font-bold text-[#1E212C]">Official Google Partner</p>
+                                <p class="mt-2 text-sm leading-6 text-[#787A80]">
+                                    Certified expertise in campaign management, optimization, and paid growth channels.
+                                </p>
+                            </article>
+
+                            <article class="rounded-[4px] border border-[#E5E8ED] bg-white px-5 py-5">
+                                <img src="./image/award (2).png" alt="HubSpot partner award" class="h-12 w-auto" />
+                                <p class="mt-4 text-sm font-bold text-[#1E212C]">HubSpot Certified Partner</p>
+                                <p class="mt-2 text-sm leading-6 text-[#787A80]">
+                                    Recognised for inbound marketing, CRM workflows, and measurable lead generation.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-16 sm:py-20 lg:py-24">
+            <div class="mx-auto max-w-[1230px] px-4 sm:px-6">
+                <div
+                    class="rounded-[4px] bg-[#7772F1] px-5 py-8 shadow-[0_24px_48px_rgba(119,114,241,0.22)] sm:px-8 lg:px-10 lg:py-10">
+                    <h2 class="text-center text-[28px] font-black text-white sm:text-[32px]">
+                        Get a Free SEO Analysis!
+                    </h2>
+
+                    <form class="mt-8 grid gap-4 lg:grid-cols-[1fr_1fr_1fr_auto] lg:items-end">
+                        <label class="flex flex-col gap-2 text-left text-sm text-white/90">
+                            <span>Name</span>
+                            <input type="text" placeholder="Your name"
+                                class="h-12 rounded-[4px] border border-white/30 bg-white/95 px-4 text-sm text-[#1E212C] outline-none placeholder:text-[#9A9CA5]" />
+                        </label>
+
+                        <label class="flex flex-col gap-2 text-left text-sm text-white/90">
+                            <span>Email</span>
+                            <input type="email" placeholder="Your working email"
+                                class="h-12 rounded-[4px] border border-white/30 bg-white/95 px-4 text-sm text-[#1E212C] outline-none placeholder:text-[#9A9CA5]" />
+                        </label>
+
+                        <label class="flex flex-col gap-2 text-left text-sm text-white/90">
+                            <span>Your website URL</span>
+                            <input type="url" placeholder="http://yoursite.com"
+                                class="h-12 rounded-[4px] border border-white/30 bg-white/95 px-4 text-sm text-[#1E212C] outline-none placeholder:text-[#9A9CA5]" />
+                        </label>
+
+                        <button
+                            class="inline-flex h-12 items-center justify-center rounded-[4px] bg-[#1E212C] px-7 text-sm font-bold text-white transition hover:bg-[#11131d]">
+                            Analyse your site
+                        </button>
                     </form>
                 </div>
             </div>
         </section>
+
+        <section class="bg-white py-16 sm:py-20 lg:py-24">
+            <div class="mx-auto max-w-[1230px] px-4 text-center sm:px-6">
+                <h2 class="text-[32px] font-black leading-tight text-[#1E212C] sm:text-[40px]">
+                    240+ satisfied clients
+                </h2>
+
+                <div class="mt-12 grid items-center gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+                    <div class="flex justify-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
+                        <img src="./image/client-logo.png" alt="Client logo" class="h-8 w-auto sm:h-10" />
+                    </div>
+                    <div class="flex justify-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
+                        <img src="./image/client-logo (1).png" alt="Client logo" class="h-8 w-auto sm:h-10" />
+                    </div>
+                    <div class="flex justify-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
+                        <img src="./image/client-logo (2).png" alt="Client logo" class="h-8 w-auto sm:h-10" />
+                    </div>
+                    <div class="flex justify-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
+                        <img src="./image/client-logo (3).png" alt="Client logo" class="h-8 w-auto sm:h-10" />
+                    </div>
+                    <div class="flex justify-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
+                        <img src="./image/client-logo (4).png" alt="Client logo" class="h-8 w-auto sm:h-10" />
+                    </div>
+                    <div class="flex justify-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
+                        <img src="./image/client-logo (5).png" alt="Client logo" class="h-8 w-auto sm:h-10" />
+                    </div>
+                    <div class="flex justify-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
+                        <img src="./image/client-logo (6).png" alt="Client logo" class="h-8 w-auto sm:h-10" />
+                    </div>
+                    <div class="flex justify-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
+                        <img src="./image/Sunset Realty Logo.png" alt="Client logo" class="h-8 w-auto sm:h-10" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-16 sm:py-20 lg:py-24">
+            <div class="mx-auto max-w-[1230px] px-4 sm:px-6">
+                <h2 class="text-center text-[32px] font-black leading-tight text-[#1E212C] sm:text-[40px]">
+                    Meet our team
+                </h2>
+
+                <div class="mt-12 flex flex-wrap justify-center gap-6">
+                    <article class="group w-full max-w-[285px] sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]">
+                        <div class="overflow-hidden rounded-[4px] bg-[#F4F5F6]">
+                            <img src="./image/team/team/image-6.png" alt="Courtney Alexander"
+                                class="h-[320px] w-full object-cover transition duration-300 group-hover:scale-105" />
+                        </div>
+                        <div class="pt-4 text-center">
+                            <h3 class="text-lg font-bold text-[#1E212C]">Courtney Alexander</h3>
+                            <p class="mt-1 text-sm text-[#787A80]">Founder &amp; CEO</p>
+                        </div>
+                    </article>
+
+                    <article class="group w-full max-w-[285px] sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]">
+                        <div class="overflow-hidden rounded-[4px] bg-[#F4F5F6]">
+                            <img src="./image/team/team/image-5.png" alt="Jerome Lane"
+                                class="h-[320px] w-full object-cover transition duration-300 group-hover:scale-105" />
+                        </div>
+                        <div class="pt-4 text-center">
+                            <h3 class="text-lg font-bold text-[#1E212C]">Jerome Lane</h3>
+                            <p class="mt-1 text-sm text-[#787A80]">Marketing Director</p>
+                        </div>
+                    </article>
+
+                    <article class="group w-full max-w-[285px] sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]">
+                        <div class="overflow-hidden rounded-[4px] bg-[#F4F5F6]">
+                            <img src="./image/team/team/image.png" alt="Dianne McCoy"
+                                class="h-[320px] w-full object-cover transition duration-300 group-hover:scale-105" />
+                        </div>
+                        <div class="pt-4 text-center">
+                            <h3 class="text-lg font-bold text-[#1E212C]">Dianne McCoy</h3>
+                            <p class="mt-1 text-sm text-[#787A80]">Lead Strategist</p>
+                        </div>
+                    </article>
+
+                    <article class="group w-full max-w-[285px] sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]">
+                        <div class="overflow-hidden rounded-[4px] bg-[#F4F5F6]">
+                            <img src="./image/team/team/image-4.png" alt="Judith Warren"
+                                class="h-[320px] w-full object-cover transition duration-300 group-hover:scale-105" />
+                        </div>
+                        <div class="pt-4 text-center">
+                            <h3 class="text-lg font-bold text-[#1E212C]">Judith Warren</h3>
+                            <p class="mt-1 text-sm text-[#787A80]">Project Manager</p>
+                        </div>
+                    </article>
+
+                    <article class="group w-full max-w-[285px] sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]">
+                        <div class="overflow-hidden rounded-[4px] bg-[#F4F5F6]">
+                            <img src="./image/team/team/image-3.png" alt="Floyd Simmons"
+                                class="h-[320px] w-full object-cover transition duration-300 group-hover:scale-105" />
+                        </div>
+                        <div class="pt-4 text-center">
+                            <h3 class="text-lg font-bold text-[#1E212C]">Floyd Simmons</h3>
+                            <p class="mt-1 text-sm text-[#787A80]">SEO Specialist</p>
+                        </div>
+                    </article>
+
+                    <article class="group w-full max-w-[285px] sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]">
+                        <div class="overflow-hidden rounded-[4px] bg-[#F4F5F6]">
+                            <img src="./image/team/team/image-2.png" alt="Wade Davis"
+                                class="h-[320px] w-full object-cover transition duration-300 group-hover:scale-105" />
+                        </div>
+                        <div class="pt-4 text-center">
+                            <h3 class="text-lg font-bold text-[#1E212C]">Wade Davis</h3>
+                            <p class="mt-1 text-sm text-[#787A80]">Account Manager</p>
+                        </div>
+                    </article>
+
+                    <article class="group w-full max-w-[285px] sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]">
+                        <div class="overflow-hidden rounded-[4px] bg-[#F4F5F6]">
+                            <img src="./image/team/team/image-1.png" alt="Jane Cooper"
+                                class="h-[320px] w-full object-cover transition duration-300 group-hover:scale-105" />
+                        </div>
+                        <div class="pt-4 text-center">
+                            <h3 class="text-lg font-bold text-[#1E212C]">Jane Cooper</h3>
+                            <p class="mt-1 text-sm text-[#787A80]">PR &amp; Content Lead</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-16 sm:py-20 lg:py-24">
+            <div class="mx-auto max-w-[1230px] px-4 sm:px-6">
+                <div class="grid gap-12 lg:grid-cols-[minmax(0,620px)_1fr] lg:items-center lg:gap-16">
+                    <div>
+                        <h2 class="text-[32px] font-black leading-tight text-[#1E212C] sm:text-[40px]">
+                            Frequently Ask Questions
+                        </h2>
+
+                        <div class="mt-10 space-y-4">
+                            <details class="group rounded-[4px] border border-[#E5E8ED] bg-white px-5 py-5 shadow-sm" open>
+                                <summary class="flex cursor-pointer list-none items-start justify-between gap-4">
+                                    <span class="text-lg font-bold text-[#1E212C]">Aliquet lectus urna viverra in odio?</span>
+                                    <span
+                                        class="mt-1 flex h-6 w-6 items-center justify-center rounded-full bg-[#7772F1]/10 text-[#7772F1] transition group-open:rotate-45">+</span>
+                                </summary>
+                                <p class="pt-4 text-sm leading-7 text-[#787A80]">
+                                    Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum
+                                    faucibus dignissim purus. Fusce parturient diam magna ullamcorper morbi semper
+                                    massa ac facilisis.
+                                </p>
+                            </details>
+
+                            <details class="group rounded-[4px] border border-[#E5E8ED] bg-white px-5 py-5 shadow-sm">
+                                <summary class="flex cursor-pointer list-none items-start justify-between gap-4">
+                                    <span class="text-lg font-bold text-[#1E212C]">Orci commodo, viverra orci, in faucibus?</span>
+                                    <span
+                                        class="mt-1 flex h-6 w-6 items-center justify-center rounded-full bg-[#7772F1]/10 text-[#7772F1] transition group-open:rotate-45">+</span>
+                                </summary>
+                                <p class="pt-4 text-sm leading-7 text-[#787A80]">
+                                    Nibh cursus donec semper consectetur condimentum lacus ac. Viverra lectus euismod
+                                    id semper sem tristique in neque.
+                                </p>
+                            </details>
+
+                            <details class="group rounded-[4px] border border-[#E5E8ED] bg-white px-5 py-5 shadow-sm">
+                                <summary class="flex cursor-pointer list-none items-start justify-between gap-4">
+                                    <span class="text-lg font-bold text-[#1E212C]">Sed odio also in morbi at?</span>
+                                    <span
+                                        class="mt-1 flex h-6 w-6 items-center justify-center rounded-full bg-[#7772F1]/10 text-[#7772F1] transition group-open:rotate-45">+</span>
+                                </summary>
+                                <p class="pt-4 text-sm leading-7 text-[#787A80]">
+                                    Eget amet enim sit arcu, bibendum et. Aliquam tincidunt at id neque, hendrerit
+                                    nisi viverra pulvinar nunc.
+                                </p>
+                            </details>
+
+                            <details class="group rounded-[4px] border border-[#E5E8ED] bg-white px-5 py-5 shadow-sm">
+                                <summary class="flex cursor-pointer list-none items-start justify-between gap-4">
+                                    <span class="text-lg font-bold text-[#1E212C]">Nulla facilisi pellentesque ac placerat?</span>
+                                    <span
+                                        class="mt-1 flex h-6 w-6 items-center justify-center rounded-full bg-[#7772F1]/10 text-[#7772F1] transition group-open:rotate-45">+</span>
+                                </summary>
+                                <p class="pt-4 text-sm leading-7 text-[#787A80]">
+                                    Scelerisque vestibulum bibendum orci, sem netus. Sit lacus, vulputate in
+                                    pellentesque porta elit ultrices.
+                                </p>
+                            </details>
+
+                            <details class="group rounded-[4px] border border-[#E5E8ED] bg-white px-5 py-5 shadow-sm">
+                                <summary class="flex cursor-pointer list-none items-start justify-between gap-4">
+                                    <span class="text-lg font-bold text-[#1E212C]">Ac, aliquam donec a blandit?</span>
+                                    <span
+                                        class="mt-1 flex h-6 w-6 items-center justify-center rounded-full bg-[#7772F1]/10 text-[#7772F1] transition group-open:rotate-45">+</span>
+                                </summary>
+                                <p class="pt-4 text-sm leading-7 text-[#787A80]">
+                                    Consequat commodo id mattis augue est. Dictum orci in sed massa donec sit lectus
+                                    nibh ac.
+                                </p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="mx-auto w-full max-w-[488px]">
+                        <img src="./image/team/team/illustration.png" alt="FAQ illustration" class="w-full" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#F4F5F6] py-16 sm:py-20 lg:py-24">
+            <div class="mx-auto max-w-[1230px] px-4 sm:px-6">
+                <div class="grid gap-10 lg:grid-cols-[minmax(0,430px)_1fr] lg:items-center lg:gap-16">
+                    <div class="mx-auto w-full max-w-[420px]">
+                        <img src="./image/team/team/illustration2.png" alt="Careers illustration" class="w-full" />
+                    </div>
+
+                    <div class="mx-auto max-w-[560px] text-center lg:mx-0 lg:text-left">
+                        <h2 class="text-[32px] font-black leading-tight text-[#1E212C] sm:text-[40px]">
+                            Careers at Createx Agency
+                        </h2>
+                        <p class="mt-6 text-base leading-8 text-[#787A80] sm:text-lg">
+                            Lobortis etiam lorem ac suspendisse. Aliquam quis, cursus nulla sit senectus.
+                            Mauris pellentesque pellentesque aliquet dictumst a augue risus.
+                        </p>
+                        <a href="./index.html"
+                            class="mt-8 inline-flex min-h-13 items-center justify-center rounded bg-[#7772F1] px-10 text-base font-bold text-white shadow-[0_14px_24px_rgba(119,114,241,0.3)] transition hover:bg-[#625de6]">
+                            Join us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-16 sm:py-20 lg:py-24">
+            <div class="mx-auto max-w-[1230px] px-4 sm:px-6">
+                <div class="grid gap-10 lg:grid-cols-[280px_minmax(0,1fr)_minmax(0,1fr)] lg:items-start">
+                    <div class="max-w-[285px]">
+                        <h2 class="text-[32px] font-black leading-tight text-[#1E212C] sm:text-[40px]">
+                            Latest news
+                        </h2>
+                        <p class="mt-6 text-base leading-8 text-[#787A80]">
+                            Check more posts in our blog for featured news and advertising insights.
+                        </p>
+                        <a href="./index.html"
+                            class="mt-8 inline-flex min-h-13 items-center justify-center rounded bg-[#7772F1] px-10 text-base font-bold text-white shadow-[0_14px_24px_rgba(119,114,241,0.3)] transition hover:bg-[#625de6]">
+                            Go to blog
+                        </a>
+                    </div>
+
+                    <article class="group overflow-hidden rounded-[4px] bg-white">
+                        <a href="./index.html" class="block">
+                            <div class="overflow-hidden rounded-[4px]">
+                                <img src="./image/pic.png" alt="Article preview"
+                                    class="h-[255px] w-full object-cover transition duration-300 group-hover:scale-105" />
+                            </div>
+                            <div class="pt-6">
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-[#787A80]">
+                                    <span>SEO</span>
+                                    <span class="h-1 w-1 rounded-full bg-[#B3B7BC]"></span>
+                                    <span>July 5, 2020</span>
+                                    <span class="h-1 w-1 rounded-full bg-[#B3B7BC]"></span>
+                                    <span>By Kristin Watson</span>
+                                </div>
+                                <h3 class="mt-4 text-xl font-bold leading-7 text-[#1E212C] transition group-hover:text-[#7772F1]">
+                                    How to Maximize Your ROI Through Scientific SEM?
+                                </h3>
+                                <p class="mt-3 text-base leading-7 text-[#787A80]">
+                                    Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio.
+                                </p>
+                                <span class="mt-4 inline-flex items-center text-base font-bold text-[#7772F1]">
+                                    Read more
+                                </span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="group overflow-hidden rounded-[4px] bg-white">
+                        <a href="./index.html" class="block">
+                            <div class="overflow-hidden rounded-[4px]">
+                                <img src="./image/woman.png" alt="Analytics article preview"
+                                    class="h-[255px] w-full object-cover transition duration-300 group-hover:scale-105" />
+                            </div>
+                            <div class="pt-6">
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-[#787A80]">
+                                    <span>Marketing</span>
+                                    <span class="h-1 w-1 rounded-full bg-[#B3B7BC]"></span>
+                                    <span>July 2, 2020</span>
+                                    <span class="h-1 w-1 rounded-full bg-[#B3B7BC]"></span>
+                                    <span>By Marvin McKinney</span>
+                                </div>
+                                <h3 class="mt-4 text-xl font-bold leading-7 text-[#1E212C] transition group-hover:text-[#7772F1]">
+                                    The Basics of Blogging Search Optimization
+                                </h3>
+                                <p class="mt-3 text-base leading-7 text-[#787A80]">
+                                    Mauris tincidunt sollicitudin tristique odio eget volutpat pellentesque tristique.
+                                </p>
+                                <span class="mt-4 inline-flex items-center text-base font-bold text-[#7772F1]">
+                                    Read more
+                                </span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="bg-[#1E212C] text-white">
+        <div class="mx-auto max-w-[1230px] px-4 py-12 sm:px-6 lg:py-16">
+            <div class="grid gap-10 text-center md:grid-cols-2 lg:grid-cols-5 lg:text-left">
+                <div class="flex flex-col items-center gap-6 lg:items-start">
+                    <a href="./index.html" class="inline-flex">
+                        <img src="./image/logo (2).png" alt="Createx logo" class="h-8 w-auto" />
+                    </a>
+                    <p class="text-sm leading-7 text-white/70">
+                        Createx SEO Agency is a full-service digital marketing agency. We help businesses make more
+                        money through a wealth of performance data and market research.
+                    </p>
+                    <img src="./image/socials.png" alt="Social links" class="h-6 w-auto" />
+                </div>
+
+                <div class="flex flex-col gap-3">
+                    <h3 class="text-sm font-bold uppercase tracking-[1px] text-white">Company</h3>
+                    <a href="./abubakr.html" class="text-sm text-white/70 transition hover:text-white">About us</a>
+                    <a href="./index_munis.html" class="text-sm text-white/70 transition hover:text-white">Case Studies</a>
+                    <a href="./index.html" class="text-sm text-white/70 transition hover:text-white">Blog</a>
+                    <a href="./index.html" class="text-sm text-white/70 transition hover:text-white">Careers</a>
+                    <a href="./index.html" class="text-sm text-white/70 transition hover:text-white">Contacts</a>
+                </div>
+
+                <div class="flex flex-col gap-3">
+                    <h3 class="text-sm font-bold uppercase tracking-[1px] text-white">Services</h3>
+                    <a href="./Rukhshona.html" class="text-sm text-white/70 transition hover:text-white">Social Media</a>
+                    <a href="./Rukhshona.html" class="text-sm text-white/70 transition hover:text-white">SEO</a>
+                    <a href="./Rukhshona.html" class="text-sm text-white/70 transition hover:text-white">Research</a>
+                    <a href="./Rukhshona.html" class="text-sm text-white/70 transition hover:text-white">Content &amp; PR</a>
+                    <a href="./Rukhshona.html" class="text-sm text-white/70 transition hover:text-white">Paid Traffic</a>
+                </div>
+
+                <div class="flex flex-col items-center gap-3 lg:items-start">
+                    <h3 class="text-sm font-bold uppercase tracking-[1px] text-white">Contact Us</h3>
+                    <a href="tel:4055550128" class="flex items-center gap-3 text-sm text-white/70 transition hover:text-white">
+                        <img src="./image/iPhone.png" alt="Phone icon" class="h-4 w-4" />
+                        <span>(405) 555-0128</span>
+                    </a>
+                    <a href="mailto:hello@createx.com" class="flex items-center gap-3 text-sm text-white/70 transition hover:text-white">
+                        <img src="./image/Mail.png" alt="Mail icon" class="h-4 w-4" />
+                        <span>hello@createx.com</span>
+                    </a>
+                </div>
+
+                <div class="flex flex-col items-center gap-3 lg:items-start">
+                    <h3 class="text-sm font-bold uppercase tracking-[1px] text-white">Sign up to our newsletter</h3>
+                    <div class="relative w-full max-w-[286px]">
+                        <input type="email" placeholder="Email address"
+                            class="h-11 w-full rounded-[4px] border border-white/20 bg-white/10 px-4 pr-12 text-sm text-white outline-none placeholder:text-white/50" />
+                        <button type="button"
+                            class="absolute right-4 top-1/2 -translate-y-1/2 text-base font-bold text-white/70 transition hover:text-white">
+                            →
+                        </button>
+                    </div>
+                    <p class="text-[10px] leading-5 text-white/70">
+                        *Subscribe to our newsletter to receive communications and early updates from Createx SEO
+                        Agency.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-10 border-t border-white/10 pt-8">
+                <div class="flex flex-col items-center justify-between gap-6 lg:flex-row">
+                    <div class="flex flex-wrap items-center justify-center gap-5 lg:justify-start">
+                        <img src="./image/award.png" alt="Clutch award" class="h-10 w-auto" />
+                        <img src="./image/image (7).png" alt="GoodFirms award" class="h-10 w-auto" />
+                        <img src="./image/award (1).png" alt="Google partner award" class="h-10 w-auto" />
+                        <img src="./image/award (2).png" alt="Hubspot award" class="h-10 w-auto" />
+                    </div>
+
+                    <a href="#top" class="inline-flex items-center gap-4 text-sm font-bold uppercase tracking-[1px] text-white">
+                        <span>Go to top</span>
+                        <span class="flex h-10 w-10 items-center justify-center rounded-[4px] bg-[#7772F1] text-lg text-white">↑</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[#292C33]">
+            <div class="mx-auto flex max-w-[1230px] flex-wrap items-center justify-center gap-2 px-4 py-4 text-center text-xs text-white/80 sm:px-6">
+                <span>&copy; All rights reserved. Made with</span>
+                <img src="./image/hh.png" alt="Heart icon" class="h-4 w-4" />
+                <span>by Createx Studio</span>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
