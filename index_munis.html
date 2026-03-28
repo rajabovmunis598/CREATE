@@ -18,27 +18,27 @@
     <div class="absolute inset-0 bg-[#1e212c]/80"></div>
   </div>
 
-  <header class="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-4 px-4 py-6 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
-    <div class="flex w-full items-center justify-between gap-4 lg:w-auto lg:justify-start lg:gap-6 xl:gap-10">
-      <div class="text-2xl font-black tracking-tighter italic"><img src="./image/logo.png" alt=""></div>
-      <nav class="hidden flex-wrap gap-4 text-sm font-bold opacity-80 lg:flex xl:gap-8">
+  <header class="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-5 px-4 py-6 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
+    <div class="flex w-full flex-col items-center gap-4 lg:w-auto lg:flex-row lg:justify-start lg:gap-6 xl:gap-10">
+      <a href="./index.html" class="text-2xl font-black tracking-tighter italic"><img src="./image/logo.png" alt="Createx logo"></a>
+      <nav class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm font-bold opacity-80 xl:gap-x-8">
         <a href="#" class="hover:opacity-100 flex items-center gap-1">Services <span class="text-[10px]">▼</span></a>
-        <a href="#" class="hover:opacity-100 text-[#7772F1]">Case Studies</a>
-        <a href="#" class="hover:opacity-100">About Us</a>
-        <a href="#" class="hover:opacity-100">Blog</a>
-        <a href="#" class="hover:opacity-100">Contacts</a>
+        <a href="./index_munis.html" class="hover:opacity-100 text-[#7772F1]">Case Studies</a>
+        <a href="./abubakr.html" class="hover:opacity-100">About Us</a>
+        <a href="./index.html" class="hover:opacity-100">Blog</a>
+        <a href="./index.html" class="hover:opacity-100">Contacts</a>
       </nav>
     </div>
-    <button class="w-full rounded-md bg-[#7772F1] px-6 py-3 text-sm font-bold text-white transition-all hover:bg-[#5a54d6] sm:w-auto sm:px-8">
+    <a href="./index.html" class="w-full rounded-md bg-[#7772F1] px-6 py-3 text-center text-sm font-bold text-white transition-all hover:bg-[#5a54d6] sm:w-auto sm:px-8">
       Talk to a human
-    </button>
+    </a>
   </header>
 
   <div class="relative z-10 flex flex-col items-center justify-center px-4 pb-10 pt-4 text-center sm:px-6 lg:min-h-[380px]">
     <nav class="mb-8 flex flex-wrap items-center justify-center gap-2 text-xs opacity-60 sm:mb-12">
-      <a href="#"><img src="./image/Home.svg" class="w-3 h-3 invert" alt="Home"></a>
+      <a href="./index.html"><img src="./image/Home.svg" class="w-3 h-3 invert" alt="Home"></a>
       <span>/</span>
-      <a href="#" class="hover:underline">Case Studies</a>
+      <a href="./index_munis.html" class="hover:underline">Case Studies</a>
       <span>/</span>
       <span class="max-w-[320px] opacity-100 sm:max-w-2xl">200% increase in conversion rate for Lovato Company</span>
     </nav>
@@ -340,7 +340,11 @@
     © All rights reserved. Made with <span class="text-blue-500">💙</span> by Createx Studio
   </div>
 </footer>
-
-
+<script>
+  const servicesNavLink = document.querySelector('header nav a[href="#"]');
+  if (servicesNavLink) {
+    servicesNavLink.href = './Rukhshona.html';
+  }
+</script>
 </body>
 </html>
