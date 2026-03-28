@@ -8,7 +8,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <section class="relative h-[500px] flex flex-col font-sans text-white overflow-hidden">
+    <section class="relative min-h-[560px] overflow-hidden font-sans text-white lg:min-h-[500px]">
   <div class="absolute inset-0 z-0">
     <img 
       src="./image/image (5).png" 
@@ -18,10 +18,10 @@
     <div class="absolute inset-0 bg-[#1e212c]/80"></div>
   </div>
 
-  <header class="relative z-10 w-full max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
-    <div class="flex items-center gap-10">
+  <header class="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-4 px-4 py-6 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
+    <div class="flex w-full items-center justify-between gap-4 lg:w-auto lg:justify-start lg:gap-6 xl:gap-10">
       <div class="text-2xl font-black tracking-tighter italic"><img src="./image/logo.png" alt=""></div>
-      <nav class="hidden md:flex gap-8 text-sm font-bold opacity-80">
+      <nav class="hidden flex-wrap gap-4 text-sm font-bold opacity-80 lg:flex xl:gap-8">
         <a href="#" class="hover:opacity-100 flex items-center gap-1">Services <span class="text-[10px]">▼</span></a>
         <a href="#" class="hover:opacity-100 text-[#7772F1]">Case Studies</a>
         <a href="#" class="hover:opacity-100">About Us</a>
@@ -29,18 +29,18 @@
         <a href="#" class="hover:opacity-100">Contacts</a>
       </nav>
     </div>
-    <button class="bg-[#7772F1] hover:bg-[#5a54d6] text-white px-8 py-3 rounded-md text-sm font-bold transition-all">
+    <button class="w-full rounded-md bg-[#7772F1] px-6 py-3 text-sm font-bold text-white transition-all hover:bg-[#5a54d6] sm:w-auto sm:px-8">
       Talk to a human
     </button>
   </header>
 
-  <div class="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4">
-    <nav class="flex items-center gap-2 text-xs opacity-60 mb-12">
-      <a href="#"><img src="home-icon.svg" class="w-3 h-3 invert" alt="Home"></a>
+  <div class="relative z-10 flex flex-col items-center justify-center px-4 pb-10 pt-4 text-center sm:px-6 lg:min-h-[380px]">
+    <nav class="mb-8 flex flex-wrap items-center justify-center gap-2 text-xs opacity-60 sm:mb-12">
+      <a href="#"><img src="./image/Home.svg" class="w-3 h-3 invert" alt="Home"></a>
       <span>/</span>
       <a href="#" class="hover:underline">Case Studies</a>
       <span>/</span>
-      <span class="opacity-100">200% increase in conversion rate for Lovato Company</span>
+      <span class="max-w-[320px] opacity-100 sm:max-w-2xl">200% increase in conversion rate for Lovato Company</span>
     </nav>
 
     <div class="mb-6">
@@ -49,30 +49,30 @@
       </div>
     </div>
 
-    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black max-w-4xl leading-tight">
+    <h1 class="max-w-4xl text-3xl font-black leading-tight sm:text-4xl md:text-5xl lg:text-6xl">
       200% increase in conversion rate for Lovato Company
     </h1>
   </div>
 </section>
-<section class="max-w-7xl mx-auto p-4 md:p-16 bg-white font-sans text-[#424551]">
-  <div class="flex flex-col lg:flex-row gap-20">
+<section class="mx-auto max-w-7xl bg-white p-4 font-sans text-[#424551] sm:p-6 md:p-10 lg:p-16">
+  <div class="flex flex-col gap-10 lg:flex-row lg:gap-20">
     
     <div class="w-full lg:w-2/3">
       
-      <div class="bg-white rounded-xl shadow-2xl p-10 border border-gray-50 mb-20">
-        <div class="flex justify-between items-center mb-10">
+      <div class="mb-16 rounded-xl border border-gray-50 bg-white p-6 shadow-2xl sm:p-8 lg:mb-20 lg:p-10">
+        <div class="mb-8 flex flex-col gap-4 sm:mb-10 sm:flex-row sm:items-center sm:justify-between">
           <h3 class="text-2xl font-bold text-[#1E212C]">Final Results</h3>
-          <div class="flex gap-4 text-[10px] font-bold uppercase tracking-wider">
+          <div class="flex flex-wrap gap-4 text-[10px] font-bold uppercase tracking-wider">
             <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-[#7772F1]"></span> Revenue</span>
             <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-[#03CEA4]"></span> Leads</span>
           </div>
         </div>
-        <div class="h-64 bg-[#F4F5F6] rounded-lg flex items-center justify-center border-2 border-dashed border-gray-200">
-           <img src="./image/Chart Figure.png" alt="Bar Chart" class="max-h-full">
+        <div class="flex min-h-[220px] h-auto items-center justify-center rounded-lg border-2 border-dashed border-gray-200 bg-[#F4F5F6] sm:h-64">
+           <img src="./image/Chart Figure.png" alt="Bar Chart" class="max-h-[240px] w-full object-contain">
         </div>
       </div>
 
-      <div class="mb-20">
+      <div class="mb-16 lg:mb-20">
         <h2 class="text-3xl font-bold text-[#1E212C] mb-8">Strategies</h2>
         <ul class="space-y-4 mb-10">
           <li class="flex items-start gap-3 text-sm">
@@ -89,13 +89,13 @@
         </p>
       </div>
 
-      <div class="relative py-10 mb-20">
+      <div class="relative mb-16 py-6 sm:py-10 lg:mb-20">
         <div class="rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-white">
           <img src="./image/illustration.png" alt="Analytics Dashboard" class="w-full h-auto">
         </div>
       </div>
 
-      <div class="mb-20">
+      <div class="mb-16 lg:mb-20">
         <h2 class="text-3xl font-bold text-[#1E212C] mb-8">Resieved goals</h2>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-4">
           <li class="flex items-center gap-3 text-sm font-medium">
@@ -126,8 +126,8 @@
     </div>
 
     <div class="w-full lg:w-1/3">
-      <div class="sticky top-10">
-        <div class="bg-[#F4F5F6] rounded-2xl p-10 mb-8">
+      <div class="lg:sticky lg:top-10">
+        <div class="mb-8 rounded-2xl bg-[#F4F5F6] p-6 sm:p-8 lg:p-10">
           <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#1E212C] mb-6">About the client</h4>
           <p class="text-sm text-[#787A80] leading-relaxed mb-8">
             At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus mi sit sagittis, vitae diam duis dignissim.
@@ -166,12 +166,12 @@
 
   </div>
 </section>
-<section class="max-w-6xl mx-auto py-24 px-6 font-sans">
-  <h2 class="text-4xl font-black text-[#1E212C] text-center mb-16">What our clients say</h2>
+<section class="mx-auto max-w-6xl px-4 py-16 font-sans sm:px-6 lg:py-24">
+  <h2 class="mb-12 text-center text-3xl font-black text-[#1E212C] sm:mb-16 md:text-4xl">What our clients say</h2>
   
   <div class="relative max-w-4xl mx-auto">
-    <div class="bg-white rounded-xl shadow-[0px_80px_80px_-20px_rgba(154,156,165,0.08),0px_30px_24px_-10px_rgba(154,156,165,0.05),0px_12px_10px_-6px_rgba(154,156,165,0.04),0px_4px_4px_-4px_rgba(30,33,44,0.03)] p-12 md:p-16 relative">
-      <img src="./image/braces.png" class="absolute top-12 left-12 w-8 opacity-20" alt="Quotes">
+    <div class="relative rounded-xl bg-white p-6 shadow-[0px_80px_80px_-20px_rgba(154,156,165,0.08),0px_30px_24px_-10px_rgba(154,156,165,0.05),0px_12px_10px_-6px_rgba(154,156,165,0.04),0px_4px_4px_-4px_rgba(30,33,44,0.03)] sm:p-10 md:p-16">
+      <img src="./image/braces.png" class="absolute left-6 top-6 hidden w-6 opacity-20 sm:block md:left-12 md:top-12 md:w-8" alt="Quotes">
       <p class="text-[#424551] text-lg leading-relaxed mb-8">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar ad sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
       </p>
@@ -184,22 +184,22 @@
       </div>
     </div>
     
-    <button class="absolute -left-16 top-1/2 -translate-y-1/2 text-gray-300 hover:text-[#7772F1] transition-colors hidden md:block">←</button>
-    <button class="absolute -right-16 top-1/2 -translate-y-1/2 bg-[#7772F1] text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-[#5a54d6] transition-all hidden md:flex">→</button>
+    <button class="absolute left-2 top-1/2 hidden -translate-y-1/2 text-gray-300 transition-colors hover:text-[#7772F1] lg:block">←</button>
+    <button class="absolute right-2 top-1/2 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-[#7772F1] text-white shadow-lg transition-all hover:bg-[#5a54d6] lg:flex">→</button>
   </div>
 </section>
 
-<section class="max-w-6xl mx-auto py-24 px-6 font-sans">
-  <div class="flex justify-between items-end mb-12">
-    <h2 class="text-4xl font-black text-[#1E212C]">Check out our other case studies</h2>
+<section class="mx-auto max-w-6xl px-4 py-16 font-sans sm:px-6 lg:py-24">
+  <div class="mb-12 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+    <h2 class="max-w-3xl text-3xl font-black text-[#1E212C] md:text-4xl">Check out our other case studies</h2>
     <div class="flex gap-4">
       <button class="text-gray-400">←</button>
       <button class="bg-[#7772F1] text-white w-8 h-8 rounded-full flex items-center justify-center">→</button>
     </div>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-10 hover:shadow-2xl transition-all group">
+  <div class="mb-16 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+    <div class="group h-full rounded-xl border border-gray-100 bg-white p-6 shadow-sm transition-all hover:shadow-2xl sm:p-8 lg:p-10">
       <div class="flex items-center gap-2 mb-6">
         <span class="text-green-500 font-bold">●</span>
         <span class="text-[10px] font-bold uppercase tracking-widest text-[#9A9CA5]">Charity organisation</span>
@@ -207,15 +207,15 @@
       <p class="text-sm font-bold text-[#1E212C] mb-10 group-hover:text-[#7772F1] transition-colors">
         Createx SEO Agency helped National Inc. increase their MQL to SQL conversion rate by 300%
       </p>
-      <div class="flex gap-8 border-t pt-8">
+      <div class="flex flex-col gap-4 border-t pt-8 sm:flex-row sm:gap-8">
         <div><p class="text-xl font-bold">90%</p><p class="text-[10px] uppercase text-[#9A9CA5]">Engagement</p></div>
         <div><p class="text-xl font-bold">100%</p><p class="text-[10px] uppercase text-[#9A9CA5]">Deliverability</p></div>
       </div>
     </div>
 
-    <div class="relative rounded-xl overflow-hidden group">
+    <div class="group relative min-h-[360px] overflow-hidden rounded-xl sm:min-h-[420px]">
       <img src="./image/image.png" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Case background">
-      <div class="absolute inset-0 bg-[#1E212C]/80 p-10 flex flex-col justify-between text-white">
+      <div class="absolute inset-0 flex flex-col justify-between gap-6 bg-[#1E212C]/80 p-6 text-white sm:p-8 lg:p-10">
         <div>
           <div class="flex items-center gap-2 mb-6 opacity-60">
             <span class="text-blue-400 font-bold">●</span>
@@ -225,14 +225,14 @@
             With an advanced A/B testing and usability analysis, Createx SEO Agency helps Del Mar see a 400% increase in conversion rate.
           </p>
         </div>
-        <div class="flex gap-8 border-t border-white/20 pt-8">
+        <div class="flex flex-col gap-4 border-t border-white/20 pt-8 sm:flex-row sm:gap-8">
           <div><p class="text-xl font-bold">200%</p><p class="text-[10px] uppercase opacity-60">Growth in sales</p></div>
           <div><p class="text-xl font-bold">1,400</p><p class="text-[10px] uppercase opacity-60">Target investors</p></div>
         </div>
       </div>
     </div>
 
-    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-10 hover:shadow-2xl transition-all group">
+    <div class="group h-full rounded-xl border border-gray-100 bg-white p-6 shadow-sm transition-all hover:shadow-2xl sm:p-8 lg:p-10">
       <div class="flex items-center gap-2 mb-6">
         <span class="text-orange-500 font-bold">●</span>
         <span class="text-[10px] font-bold uppercase tracking-widest text-[#9A9CA5]">Personal care</span>
@@ -240,7 +240,7 @@
       <p class="text-sm font-bold text-[#1E212C] mb-10 group-hover:text-[#7772F1] transition-colors">
         We helped Sumit company break through a noisy industry and better understand their buyer's journey.
       </p>
-      <div class="flex gap-8 border-t pt-8">
+      <div class="flex flex-col gap-4 border-t pt-8 sm:flex-row sm:gap-8">
         <div><p class="text-xl font-bold">70%</p><p class="text-[10px] uppercase text-[#9A9CA5]">Open Rate</p></div>
         <div><p class="text-xl font-bold">200%</p><p class="text-[10px] uppercase text-[#9A9CA5]">Growth in sales</p></div>
       </div>
